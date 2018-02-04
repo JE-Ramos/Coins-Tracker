@@ -8,10 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PriceCheckerViewController: UIViewController {
 
+    var viewModel: PriceCheckerViewModel!
+    
+    var customView: PriceCheckerView {
+        return self.view as! PriceCheckerView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        viewModel = PriceCheckerViewModel(delegate: self)
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -21,5 +31,13 @@ class ViewController: UIViewController {
     }
 
 
+}
+
+extension PriceCheckerViewController: PriceCheckerViewModelDelegate {
+    func didUpdatePrice(price: PriceCellModel) {
+        customView.representable = viewModel
+    }
+    
+    
 }
 

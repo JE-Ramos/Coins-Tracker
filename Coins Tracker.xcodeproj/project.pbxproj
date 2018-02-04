@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		32408D1C2026B66A000F66B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32408D1B2026B66A000F66B2 /* AppDelegate.swift */; };
-		32408D1E2026B66A000F66B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32408D1D2026B66A000F66B2 /* ViewController.swift */; };
+		32408D1E2026B66A000F66B2 /* PriceCheckerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32408D1D2026B66A000F66B2 /* PriceCheckerViewController.swift */; };
 		32408D212026B66A000F66B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32408D1F2026B66A000F66B2 /* Main.storyboard */; };
 		32408D242026B66A000F66B2 /* Coins_Tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 32408D222026B66A000F66B2 /* Coins_Tracker.xcdatamodeld */; };
 		32408D262026B66A000F66B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32408D252026B66A000F66B2 /* Assets.xcassets */; };
 		32408D292026B66A000F66B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32408D272026B66A000F66B2 /* LaunchScreen.storyboard */; };
 		32408D342026B66A000F66B2 /* Coins_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32408D332026B66A000F66B2 /* Coins_TrackerTests.swift */; };
 		32408D3F2026B66A000F66B2 /* Coins_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32408D3E2026B66A000F66B2 /* Coins_TrackerUITests.swift */; };
+		32408D4E2026D183000F66B2 /* PriceCheckerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32408D4D2026D183000F66B2 /* PriceCheckerView.swift */; };
+		32408D5020270278000F66B2 /* PriceCheckerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32408D4F20270278000F66B2 /* PriceCheckerViewModel.swift */; };
+		32408D5720270AEB000F66B2 /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32408D5620270AEB000F66B2 /* Market.swift */; };
+		32408D5A20271196000F66B2 /* CountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32408D5920271196000F66B2 /* CountdownTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +41,7 @@
 /* Begin PBXFileReference section */
 		32408D182026B66A000F66B2 /* Coins Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coins Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32408D1B2026B66A000F66B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		32408D1D2026B66A000F66B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		32408D1D2026B66A000F66B2 /* PriceCheckerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCheckerViewController.swift; sourceTree = "<group>"; };
 		32408D202026B66A000F66B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32408D232026B66A000F66B2 /* Coins_Tracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Coins_Tracker.xcdatamodel; sourceTree = "<group>"; };
 		32408D252026B66A000F66B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +53,10 @@
 		32408D3A2026B66A000F66B2 /* Coins TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coins TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32408D3E2026B66A000F66B2 /* Coins_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coins_TrackerUITests.swift; sourceTree = "<group>"; };
 		32408D402026B66A000F66B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32408D4D2026D183000F66B2 /* PriceCheckerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCheckerView.swift; sourceTree = "<group>"; };
+		32408D4F20270278000F66B2 /* PriceCheckerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCheckerViewModel.swift; sourceTree = "<group>"; };
+		32408D5620270AEB000F66B2 /* Market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
+		32408D5920271196000F66B2 /* CountdownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +107,11 @@
 		32408D1A2026B66A000F66B2 /* Coins Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				32408D1B2026B66A000F66B2 /* AppDelegate.swift */,
-				32408D1D2026B66A000F66B2 /* ViewController.swift */,
+				32408D5820271189000F66B2 /* Components */,
+				32408D5520270ADE000F66B2 /* CoinsPh */,
 				32408D1F2026B66A000F66B2 /* Main.storyboard */,
+				32408D4C2026B911000F66B2 /* PriceChecker */,
+				32408D1B2026B66A000F66B2 /* AppDelegate.swift */,
 				32408D252026B66A000F66B2 /* Assets.xcassets */,
 				32408D272026B66A000F66B2 /* LaunchScreen.storyboard */,
 				32408D2A2026B66A000F66B2 /* Info.plist */,
@@ -126,6 +136,40 @@
 				32408D402026B66A000F66B2 /* Info.plist */,
 			);
 			path = "Coins TrackerUITests";
+			sourceTree = "<group>";
+		};
+		32408D4C2026B911000F66B2 /* PriceChecker */ = {
+			isa = PBXGroup;
+			children = (
+				32408D5420270AA6000F66B2 /* Tasks */,
+				32408D1D2026B66A000F66B2 /* PriceCheckerViewController.swift */,
+				32408D4D2026D183000F66B2 /* PriceCheckerView.swift */,
+				32408D4F20270278000F66B2 /* PriceCheckerViewModel.swift */,
+			);
+			path = PriceChecker;
+			sourceTree = "<group>";
+		};
+		32408D5420270AA6000F66B2 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		32408D5520270ADE000F66B2 /* CoinsPh */ = {
+			isa = PBXGroup;
+			children = (
+				32408D5620270AEB000F66B2 /* Market.swift */,
+			);
+			path = CoinsPh;
+			sourceTree = "<group>";
+		};
+		32408D5820271189000F66B2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				32408D5920271196000F66B2 /* CountdownTimer.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,7 +240,7 @@
 				TargetAttributes = {
 					32408D172026B66A000F66B2 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					32408D2E2026B66A000F66B2 = {
 						CreatedOnToolsVersion = 9.2;
@@ -262,9 +306,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32408D1E2026B66A000F66B2 /* ViewController.swift in Sources */,
+				32408D4E2026D183000F66B2 /* PriceCheckerView.swift in Sources */,
+				32408D5020270278000F66B2 /* PriceCheckerViewModel.swift in Sources */,
+				32408D1E2026B66A000F66B2 /* PriceCheckerViewController.swift in Sources */,
+				32408D5A20271196000F66B2 /* CountdownTimer.swift in Sources */,
 				32408D242026B66A000F66B2 /* Coins_Tracker.xcdatamodeld in Sources */,
 				32408D1C2026B66A000F66B2 /* AppDelegate.swift in Sources */,
+				32408D5720270AEB000F66B2 /* Market.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,11 +478,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Coins Tracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bewhealthy.coinstracker.Coins-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -444,11 +495,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Coins Tracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bewhealthy.coinstracker.Coins-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
