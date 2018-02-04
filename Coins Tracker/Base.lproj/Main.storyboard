@@ -88,36 +88,12 @@
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pPU-oT-nsC" secondAttribute="trailing" constant="20" symbolic="YES" id="qxD-jU-ycK"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="AgQ-s9-JID">
-                                <rect key="frame" x="0.0" y="167" width="375" height="451"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YSR-Jr-lWD">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="3Bd-nR-GDm">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="q7U-7P-Pax" firstAttribute="trailing" secondItem="AgQ-s9-JID" secondAttribute="trailing" id="5ZX-7a-Td9"/>
                             <constraint firstItem="q7U-7P-Pax" firstAttribute="top" secondItem="eHa-qK-YVl" secondAttribute="top" constant="9" id="B4V-Gh-Ig3"/>
                             <constraint firstItem="q7U-7P-Pax" firstAttribute="trailing" secondItem="eHa-qK-YVl" secondAttribute="trailing" id="Ugj-ke-yn1"/>
                             <constraint firstItem="eHa-qK-YVl" firstAttribute="leading" secondItem="q7U-7P-Pax" secondAttribute="leading" id="W8K-1K-MaS"/>
-                            <constraint firstItem="AgQ-s9-JID" firstAttribute="leading" secondItem="q7U-7P-Pax" secondAttribute="leading" id="hMI-k8-dSG"/>
-                            <constraint firstItem="AgQ-s9-JID" firstAttribute="top" secondItem="eHa-qK-YVl" secondAttribute="bottom" constant="16" id="qjD-bA-EO6"/>
-                            <constraint firstItem="q7U-7P-Pax" firstAttribute="bottom" secondItem="AgQ-s9-JID" secondAttribute="bottom" id="v32-BU-hSU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="q7U-7P-Pax"/>
                         <connections>
